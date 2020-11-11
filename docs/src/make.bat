@@ -31,5 +31,9 @@ goto end
 :help
 %SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
 
+github:
+	@make html
+	@cp -a _build/html/. ./docs
+
 :end
 popd
